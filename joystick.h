@@ -5,7 +5,7 @@
 #define PIN_VRY     35
 #define PIN_SW      32
 
-#define DEAD_ZONE   200
+#define DEAD_ZONE   500
 #define CENTER      2048
 #define DEBOUNCE_MS 200
 #define LONG_PRESS_MS 1000

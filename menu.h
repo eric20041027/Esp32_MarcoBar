@@ -12,10 +12,12 @@ struct MenuPage {
 };
 
 static const MenuPage PAGES[] = {
-  { "Media",   { {"Vol +"},  {"Vol -"},  {"Mute"},   {""} },     3 },
-  { "Display", { {"Bright+"}, {"Bright-"}, {""}, {""} },         2 },
-  { "Sites",   { {"YouTube"}, {"GitHub"}, {"ChatGPT"}, {""} },   3 },
-  { "System",  { {"Lock"},   {"Screenshot"}, {""}, {""} },       2 },
+  { "Media",   { {"Vol +"},  {"Vol -"},  {"Mute"},  {"Play"} },  4 },
+  { "Media 2", { {"Prev"},   {"Next"},   {""},       {""} },      2 },
+  { "Sites",   { {"YouTube"}, {"GitHub"}, {"ChatGPT"}, {"Claude"} }, 4 },
+  { "System",  { {"Lock"},   {"Screenshot"}, {""}, {""} },        2 },
+  { "Window",  { {"Mission"}, {"Input"},  {"Desktop"}, {""} },   3 },
+  { "Sensor",  { {"Temp/Hum"}, {""}, {""}, {""} },               1 },
 };
 
 static const uint8_t PAGE_COUNT = sizeof(PAGES) / sizeof(PAGES[0]);
